@@ -1,0 +1,12 @@
+# No permission message
+NO_PERMISSION: '&cNo permission!'
+# Update status message
+UPDATE_STATUS_INFO: '&8&l[ &a&lF4stbutterfly-enderchest ] &a&lCurrent update status: {STATUS}'
+# Update new version message
+UPDATE_STATUS_NEWV: '&8&l[ &a&lF4stbutterfly-enderchest ] &a&lCurrent version: &e{CURRENT} &a&lNew version: &e{NEW}'
+# Only player allowed message
+ONLY_PLAYER: '&cOnly player can do that!'
+# aec command usage
+AEC_COMMAND_USAGE: '&cProper usage: /aenderchest <player>'
+# Unkown player error
+UNKNOWN_PLAYER: '&cInvalid player!'

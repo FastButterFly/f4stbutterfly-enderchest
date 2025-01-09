@@ -1,0 +1,11 @@
+name: f4stbutterfly-enderchest
+version: '0.0.1'
+main: me.f4stbutterfly.Main
+api-version: '1.20'
+author: f4stbutterfly
+description: Enderchest plugin (https://github.com/FastButterFly/ | https://www.spigotmc.org/resources/authors/xxxedddxd.1614354/)
+commands:
+  ec:
+    aliases: [enderchest]
+  aec:
+    aliases: [aenderchest]

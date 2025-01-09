@@ -1,0 +1,6 @@
+me\f4stbutterfly\ConfigManager.class
+me\f4stbutterfly\Main.class
+me\f4stbutterfly\commands\AdminEnderChest.class
+me\f4stbutterfly\updateHandler\updateInfoClass.class
+me\f4stbutterfly\commands\EnderChestCommand.class
+me\f4stbutterfly\utils\ColorUtil.class
