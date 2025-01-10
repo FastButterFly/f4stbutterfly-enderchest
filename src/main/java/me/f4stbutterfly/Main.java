@@ -1,4 +1,5 @@
 package me.f4stbutterfly;
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -30,6 +31,7 @@ public class Main extends JavaPlugin implements Listener
         getServer().getPluginManager().registerEvents(this, this);
         getCommand("ec").setExecutor(new EnderChestCommand(this));
         getCommand("aec").setExecutor(new AdminEnderChest(this));
+        Bukkit.getPluginManager().registerEvents(this, this);
     };
 
     public void onDisable() {

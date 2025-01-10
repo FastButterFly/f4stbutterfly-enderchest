@@ -27,26 +27,20 @@ public class updateInfoClass {
         
         try {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            if(response.statusCode() == 304) {
-                parsed = true;
-                String responseBody = response.body();
-
-                String[] lines = responseBody.split("\n");
-                int var1 = Integer.parseInt(lines[0].trim());
-                int var2 = Integer.parseInt(lines[1].trim());
-                int var3 = Integer.parseInt(lines[2].trim());
-
+            parsed = true;
+            String responseBody = response.body();
+            String[] lines = responseBody.split("\n");
+            int var1 = Integer.parseInt(lines[0].trim());
+            int var2 = Integer.parseInt(lines[1].trim());
+            int var3 = Integer.parseInt(lines[2].trim());
                 if((_m.version_VID1 != var1) || (_m.version_VID2 != var2) || (_m.version_VID3 != var3)) {
-                    lastNewVer = true;
-                    newVer = "" + var1 + "." + var2 + "." + var3;
+                   lastNewVer = true;
+                       newVer = "" + var1 + "." + var2 + "." + var3;
                 }
-            } else {
+            } catch (IOException | InterruptedException e) {
+                e.printStackTrace();
                 _m.getLogger().warning("Failed to get update version from plugin github repo!");
             }
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-            _m.getLogger().warning("Failed to get update version from plugin github repo!");
-        }
     }
     public void notifyPlrOfUpdate(Player p) {
         if (!parsed) {
