@@ -17,7 +17,7 @@ public class Main extends JavaPlugin implements Listener
 {
     public int version_VID1 = 0;
     public int version_VID2 = 0;
-    public int version_VID3 = 1;
+    public int version_VID3 = 2;
     public List<Permission> perms = new ArrayList<>();
     private updateInfoClass update = new updateInfoClass(this);
     public ConfigManager _mgr = new ConfigManager(this);
